@@ -106,6 +106,15 @@ section {
     border: transparent;
 }
 
+/* Active link Styles */
+
+.scrollLink.active-class {
+    background-color: palevioletred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+
 /* Header Styles */
 
 .page__header {
@@ -253,7 +262,8 @@ section:nth-of-type(3n + 1) .landing__container::after {
 section.your-active-class {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-    border: solid 10px red;
+    border: double 10px rgb(255, 0, 242);
+    background-color: rebeccapurple;
 }
 
 section.your-active-class .landing__container::before {
@@ -286,5 +296,190 @@ section.your-active-class .landing__container::after {
     }
     to {
         transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+}
+
+/* Styles for screensizes */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width: 600px) {
+    .navbar__menu li {
+        width: 40%;
+        margin: 1px;
+    }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60px;
+        justify-content: center;
+        align-content: space-around;
+        text-align: center;
+        background-color: rgb(53, 53, 247);
+    }
+    #navbar__list li a {
+        color: white;
+    }
+    .to-top {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .navbar__menu li {
+        background-color: rgb(86, 86, 250);
+        width: 100%;
+        background-origin: padding-box;
+        border-style: solid;
+    }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(200, 236, 248);
+    }
+    #navbar__list li a {
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        text-align: left;
+    }
+    .navbar__menu li {
+        width: 40%;
+        margin: 1px;
+    }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60px;
+        justify-content: center;
+        align-content: space-around;
+        text-align: center;
+        background-color: rgb(53, 53, 247);
+    }
+    #navbar__list li a {
+        color: white;
+    }
+    .to-top {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .navbar__menu li {
+        width: 40%;
+        align-content: space-around;
+        margin: 15px 10px 15px 10px;
+    }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-content: space-around;
+        flex-wrap: wrap;
+        padding: 1vh;
+    }
+    #navbar__list li a {
+        color: white;
+        text-align: center;
+        font-size: 4vh;
+    }
+    section.your-active-class {
+        font-size: 2vh;
+        margin-top: 28%;
+    }
+    section:nth-of-type(even) .landing__container {
+        margin-top: 2vh;
+        padding-top: 120px;
+        padding-bottom: 10px;
+        position: absolute;
+        top: 50%;
+        font-size: 1.8vh;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    section:nth-of-type(odd) .landing__container {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        margin-top: 2vh;
+        position: absolute;
+        top: 50%;
+        font-size: 1.8vh;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .to-top {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-bottom: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .navbar__menu li {
+        width: 40%;
+        align-content: space-around;
+        margin: 15px 10px 15px 10px;
+    }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-content: space-around;
+        flex-wrap: wrap;
+        padding: 1vh;
+    }
+    #navbar__list li a {
+        color: white;
+        text-align: center;
+        font-size: 4vh;
+    }
+    section.your-active-class {
+        font-size: 2vh;
+        margin-top: 28%;
+    }
+    section:nth-of-type(even) .landing__container {
+        margin-top: 2vh;
+        padding-top: 10px;
+        position: absolute;
+        top: 50%;
+        font-size: 1.8vh;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding-bottom: 100px;
+        padding-top: 280px;
+    }
+    section:nth-of-type(odd) .landing__container {
+        padding-top: 280px;
+        padding-bottom: 100px;
+        margin-top: 2vh;
+        position: absolute;
+        top: 50%;
+        font-size: 1.8vh;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .to-top {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-bottom: 10px;
     }
 }
