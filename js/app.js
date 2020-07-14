@@ -20,8 +20,6 @@ sectionIDs.forEach(section => {
     addListItems(section);
 });
 
-/*navBar.style.cssText = 'height:35px; display:flex; justify-content:space-around; margin-top:10px';*/
-
 let elementsLi = document.querySelectorAll('ul#navbar__list > li a');
 
 for (let i = 0; i < elementsLi.length; i++) {

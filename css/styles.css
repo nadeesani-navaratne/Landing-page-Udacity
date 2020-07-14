@@ -380,6 +380,8 @@ section.your-active-class .landing__container::after {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
+
+
     .navbar__menu li {
         width: 40%;
         align-content: space-around;
@@ -398,6 +400,13 @@ section.your-active-class .landing__container::after {
         text-align: center;
         font-size: 4vh;
     }
+
+    .landing__container {
+        max-width: 50em;
+        padding: 5em;
+        max-height: 100vh;
+    }
+
     section.your-active-class {
         font-size: 2vh;
         margin-top: 28%;
@@ -406,6 +415,7 @@ section.your-active-class .landing__container::after {
         margin-top: 2vh;
         padding-top: 120px;
         padding-bottom: 10px;
+        padding-top: 4vh;
         position: absolute;
         top: 50%;
         font-size: 1.8vh;
@@ -413,7 +423,7 @@ section.your-active-class .landing__container::after {
         transform: translateY(-50%);
     }
     section:nth-of-type(odd) .landing__container {
-        padding-top: 50px;
+        padding-top: 120px;
         padding-bottom: 70px;
         margin-top: 2vh;
         position: absolute;
